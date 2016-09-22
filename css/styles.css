@@ -20,6 +20,9 @@ body {
 .headertext {
   background: #fff;
   padding: 15px 45px; }
+  @media screen and (min-width: 768px) {
+    .headertext {
+      margin: 0 20px; } }
   .headertext h1 {
     font-size: 20px; }
   .headertext p {
@@ -27,7 +30,8 @@ body {
     color: gray; }
 
 .middletext {
-  padding: 15px 45px; }
+  padding: 15px 45px;
+  margin: 0 20px; }
   .middletext h1 {
     font-size: 20px; }
   .middletext p {
@@ -35,13 +39,22 @@ body {
     color: gray; }
 
 .piccol {
-  margin: auto; }
+  margin: auto;
+  padding: 0; }
+  .piccol .picnail {
+    padding: 5px; }
+    @media screen and (min-width: 768px) {
+      .piccol .picnail {
+        padding: 20px; } }
+    .piccol .picnail > * {
+      padding: 0; }
   .piccol > * {
     margin: auto;
-    padding-top: 10px; }
-    @media screen and (min-width: 768) {
+    padding-top: 10px;
+    width: 60%; }
+    @media screen and (min-width: 768px) {
       .piccol > * {
-        width: initial; } }
+        width: 100%; } }
 
 .topbut {
   width: 45%;
@@ -57,14 +70,31 @@ body {
   background: url("/Users/victorcarpenter/TIY/Assignments/assignment-07/images/assets/solrod-drawingboard-background.jpg");
   background-size: cover; }
   .botbutbox .botbut {
-    width: 80%;
+    width: 85%;
     margin: 30px auto;
-    height: 7%;
+    height: 10%;
     background: #6a819e;
     border: none;
     border-radius: 5px; }
 
-.footbar ul {
-  list-style-type: none; }
+.footbar {
+  background: #fff;
+  margin: 0;
+  width: 100%; }
+  .footbar ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 10px; }
+    @media screen and (min-width: 768px) {
+      .footbar ul {
+        text-align: right; } }
+    .footbar ul li {
+      width: 10%;
+      display: inline-block;
+      padding: 10px;
+      color: gray; }
+      @media screen and (min-width: 768px) {
+        .footbar ul li {
+          width: 5%; } }
 
 /*# sourceMappingURL=styles.css.map */

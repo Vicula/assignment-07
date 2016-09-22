@@ -13,16 +13,31 @@ body {
    max-width: 960px;
    margin:auto;
 
-
 }
+
+@mixin media-query($device-width){
+   @media screen and (min-width: $device-width){
+      @content;
+   }
+}
+
+$tablet-screen: 768px;
+$desktop-screen: 1024px;
+
+
 .bodybox {
    background: #69A77C;
    padding: 0;
+
 
 }
 .headertext{
    background: #fff;
    padding: 15px 45px;
+   
+   @media screen and (min-width: $tablet-screen) {
+      margin: 0 20px;
+   }
     h1 {
       font-size: 20px;
    }
@@ -35,6 +50,7 @@ body {
 
 .middletext {
    padding: 15px 45px;
+   margin: 0 20px;
     h1 {
       font-size: 20px;
    }
@@ -46,12 +62,30 @@ body {
 }
 .piccol {
    margin: auto;
+   padding: 0;
+
+   .picnail {
+      padding: 5px;
+
+      @media screen and (min-width: $tablet-screen) {
+         padding: 20px;
+      }
+
+      > * {
+         padding: 0;
+      }
+   }
+
     > * {
       margin: auto;
       padding-top: 10px;
-      @media screen and (min-width: 768) {
-         width: initial;
+      width: 60%;
+
+
+      @media screen and (min-width: $tablet-screen) {
+         width: 100%;
       }
+
    }
 }
 .topbut {
@@ -73,9 +107,9 @@ body {
 
 
    .botbut {
-      width: 80%;
+      width: 85%;
       margin: 30px auto;
-      height: 7%;
+      height: 10%;
       background: rgb(106, 129, 158);
       border: none;
       border-radius: 5px;
@@ -84,7 +118,27 @@ body {
    }
 }
 .footbar {
+   background: #fff;
+   margin: 0;
+   width: 100%;
    ul {
       list-style-type: none;
+      text-align: left;
+      padding-left: 10px;
+      @media screen and (min-width: $tablet-screen) {
+         text-align: right;
+      }
+
+      li {
+         width: 10%;
+         display: inline-block;
+         padding: 10px;
+         color: gray;
+
+         @media screen and (min-width: $tablet-screen) {
+            width: 5%;
+
+         }
+      }
    }
 }
