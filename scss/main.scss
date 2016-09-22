@@ -11,11 +11,14 @@ body {
 
 #app-container{
    max-width: 960px;
+   margin:auto;
+
 
 }
 .bodybox {
    background: #69A77C;
    padding: 0;
+
 }
 .headertext{
    background: #fff;
@@ -44,9 +47,11 @@ body {
 .piccol {
    margin: auto;
     > * {
-      width: 50%;
       margin: auto;
       padding-top: 10px;
+      @media screen and (min-width: 768) {
+         width: initial;
+      }
    }
 }
 .topbut {
@@ -59,10 +64,11 @@ body {
    margin-top: 20px;
    margin-bottom: 30px;
 
+
 }
 
 .botbutbox {
-   background: #fff url (images/assets/solrod-drawingboard-background.jpg) center center no-repeat;
+   background: url("/Users/victorcarpenter/TIY/Assignments/assignment-07/images/assets/solrod-drawingboard-background.jpg");
    background-size: cover;
 
 
@@ -70,7 +76,15 @@ body {
       width: 80%;
       margin: 30px auto;
       height: 7%;
+      background: rgb(106, 129, 158);
+      border: none;
+      border-radius: 5px;
 
 
+   }
+}
+.footbar {
+   ul {
+      list-style-type: none;
    }
 }
