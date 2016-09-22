@@ -22,12 +22,22 @@ body {
   padding: 15px 45px; }
   @media screen and (min-width: 768px) {
     .headertext {
-      margin: 0 50px; } }
+      margin: 0 70px; } }
   .headertext h1 {
     font-size: 20px; }
+    @media screen and (min-width: 768px) {
+      .headertext h1 {
+        font-size: 32px;
+        margin-bottom: 20px; } }
   .headertext p {
     font-size: 10px;
     color: gray; }
+    @media screen and (min-width: 768px) {
+      .headertext p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin: auto 80px;
+        margin-bottom: 40px; } }
 
 .middletext {
   padding: 15px 45px;
@@ -39,7 +49,8 @@ body {
     color: gray; }
   @media screen and (min-width: 768px) {
     .middletext {
-      color: white; }
+      color: white;
+      margin: 0 70px; }
       .middletext p {
         color: white; } }
 
@@ -48,7 +59,7 @@ body {
   padding: 0; }
   @media screen and (min-width: 768px) {
     .piccol {
-      margin: 0 35px; } }
+      margin: 0 55px; } }
   .piccol .picnail {
     padding: 5px; }
     @media screen and (min-width: 768px) {
@@ -86,9 +97,9 @@ body {
   background: url("/Users/victorcarpenter/TIY/Assignments/assignment-07/images/assets/solrod-drawingboard-background.jpg");
   background-size: cover; }
   .botbutbox .botbut {
-    width: 85%;
-    margin: 30px auto;
-    height: 10%;
+    width: 90%;
+    margin: 65px auto;
+    height: 8%;
     background: #6a819e;
     border: none;
     border-radius: 5px; }
@@ -114,12 +125,32 @@ body {
         .footbar ul li {
           width: 5%; } }
 
-.botpiccol .pictitle {
-  color: gray; }
-.botpiccol .picdesc {
-  color: lightgray; }
-.botpiccol .picbotnail > * {
-  padding: 0;
-  border: none; }
+.botpiccol {
+  margin-bottom: 40px; }
+  .botpiccol .pictitle {
+    color: gray; }
+  .botpiccol .picdesc {
+    color: lightgray; }
+  .botpiccol .picbotnail > * {
+    padding: 0;
+    border: none; }
+  @media screen and (min-width: 768px) {
+    .botpiccol {
+      margin: 0 55px; } }
+
+.middlepic {
+  padding: 100px 50px;
+  display: none;
+  height: 475px; }
+  @media screen and (min-width: 768px) {
+    .middlepic {
+      display: block;
+      background: url(../images/assets/solrod-team-background.jpg) center center no-repeat;
+      background-size: cover; } }
+  .middlepic .imgcont {
+    width: 40%;
+    margin: auto; }
+  .middlepic div img {
+    margin: auto; }
 
 /*# sourceMappingURL=styles.css.map */

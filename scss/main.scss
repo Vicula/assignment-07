@@ -36,14 +36,24 @@ $desktop-screen: 1024px;
    padding: 15px 45px;
 
    @media screen and (min-width: $tablet-screen) {
-      margin: 0 50px;
+      margin: 0 70px;
    }
     h1 {
       font-size: 20px;
+      @media screen and (min-width: $tablet-screen) {
+         font-size: 32px;
+         margin-bottom: 20px;
+      }
    }
    p {
       font-size: 10px;
       color: gray;
+      @media screen and (min-width: $tablet-screen) {
+         font-size: 12px;
+         line-height: 1.5;
+         margin: auto 80px;
+         margin-bottom: 40px;
+      }
    }
 
 }
@@ -61,6 +71,7 @@ $desktop-screen: 1024px;
 
    @media screen and (min-width: $tablet-screen) {
       color: white;
+      margin: 0 70px;
       p{
          color: white;
       }
@@ -72,7 +83,7 @@ $desktop-screen: 1024px;
    padding: 0;
 
    @media screen and (min-width: $tablet-screen) {
-      margin:0 35px;
+      margin:0 55px;
    }
 
    .picnail {
@@ -129,9 +140,9 @@ $desktop-screen: 1024px;
 
 
    .botbut {
-      width: 85%;
-      margin: 30px auto;
-      height: 10%;
+      width: 90%;
+      margin: 65px auto;
+      height: 8%;
       background: rgb(106, 129, 158);
       border: none;
       border-radius: 5px;
@@ -166,7 +177,7 @@ $desktop-screen: 1024px;
    }
 }
 .botpiccol {
-
+   margin-bottom: 40px;
 
 
    .pictitle {
@@ -184,4 +195,33 @@ $desktop-screen: 1024px;
 
       }
    }
+   @media screen and (min-width: $tablet-screen) {
+      margin: 0 55px;
+   }
+}
+.middlepic {
+   padding: 100px 50px;
+   display: none;
+   height: 475px;
+
+   @media screen and (min-width: $tablet-screen) {
+      display: block;
+      background: url(../images/assets/solrod-team-background.jpg) center center no-repeat;
+      background-size: cover;
+
+   }
+
+   .imgcont {
+      width: 40%;
+      margin: auto;
+   }
+   div {
+
+
+      img {
+         margin: auto;
+      }
+   }
+
+
 }
