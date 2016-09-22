@@ -22,7 +22,7 @@ body {
   padding: 15px 45px; }
   @media screen and (min-width: 768px) {
     .headertext {
-      margin: 0 20px; } }
+      margin: 0 50px; } }
   .headertext h1 {
     font-size: 20px; }
   .headertext p {
@@ -37,17 +37,33 @@ body {
   .middletext p {
     font-size: 10px;
     color: gray; }
+  @media screen and (min-width: 768px) {
+    .middletext {
+      color: white; }
+      .middletext p {
+        color: white; } }
 
 .piccol {
   margin: auto;
   padding: 0; }
+  @media screen and (min-width: 768px) {
+    .piccol {
+      margin: 0 35px; } }
   .piccol .picnail {
     padding: 5px; }
     @media screen and (min-width: 768px) {
       .piccol .picnail {
-        padding: 20px; } }
+        padding: 15px; } }
     .piccol .picnail > * {
-      padding: 0; }
+      padding: 0;
+      border: none; }
+    .piccol .picnail p {
+      font-size: 10px;
+      line-height: 1.75; }
+      .piccol .picnail p .picname {
+        font-size: 14px; }
+      .piccol .picnail p .atname {
+        color: #7FF661; }
   .piccol > * {
     margin: auto;
     padding-top: 10px;
@@ -80,7 +96,8 @@ body {
 .footbar {
   background: #fff;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  border-radius: 0; }
   .footbar ul {
     list-style-type: none;
     text-align: left;
@@ -96,5 +113,13 @@ body {
       @media screen and (min-width: 768px) {
         .footbar ul li {
           width: 5%; } }
+
+.botpiccol .pictitle {
+  color: gray; }
+.botpiccol .picdesc {
+  color: lightgray; }
+.botpiccol .picbotnail > * {
+  padding: 0;
+  border: none; }
 
 /*# sourceMappingURL=styles.css.map */
