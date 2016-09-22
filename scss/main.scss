@@ -1,0 +1,22 @@
+*{ box-sizing: border-box }
+
+img {
+   width: 100%;
+   display: block;
+}
+body {
+   margin: 0;
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#app-container{
+   max-width: 960px;
+
+}
+.bodybox {
+   background: #69A77C;
+   padding: 0;
+}
+.headertext{
+   background: #fff;
+}
