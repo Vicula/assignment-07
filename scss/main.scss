@@ -19,4 +19,58 @@ body {
 }
 .headertext{
    background: #fff;
+   padding: 15px 45px;
+    h1 {
+      font-size: 20px;
+   }
+   p {
+      font-size: 10px;
+      color: gray;
+   }
+
+}
+
+.middletext {
+   padding: 15px 45px;
+    h1 {
+      font-size: 20px;
+   }
+   p {
+      font-size: 10px;
+      color: gray;
+   }
+
+}
+.piccol {
+   margin: auto;
+    > * {
+      width: 50%;
+      margin: auto;
+      padding-top: 10px;
+   }
+}
+.topbut {
+   width: 45%;
+   margin: auto;
+   font-size: 65%;
+   color: lightgray;
+   border: 1px lightgray solid;
+   background: #69A77C;
+   margin-top: 20px;
+   margin-bottom: 30px;
+
+}
+
+.botbutbox {
+   background: #fff url (images/assets/solrod-drawingboard-background.jpg) center center no-repeat;
+   background-size: cover;
+
+
+   .botbut {
+      width: 80%;
+      margin: 30px auto;
+      height: 7%;
+
+
+   }
 }
