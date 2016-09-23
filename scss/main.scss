@@ -29,7 +29,7 @@ $desktop-screen: 1024px;
 .bodybox {
    background: #69A77C;
    padding: 0;
-   padding-top: $nav-icon-width;
+   padding-top: $nav-icon-width+30px;
 
 
 }
@@ -248,8 +248,10 @@ nav {
    width: 100%;
    height: $nav-icon-width;
    max-width: 960px;
-   background: #000;
+
    z-index: 300;
+   max-height: $nav-icon-width;
+
 
    @media screen and (min-width: $tablet-screen) {
       left: initial;
@@ -274,5 +276,58 @@ nav {
       i {
          line-height: $nav-icon-width;
       }
+   }
+   .navbutleft {
+      padding-left: 0;
+      margin-bottom: 0;
+      max-height: $nav-icon-width
+   }
+   .navbutright {
+      text-align: right;
+      max-height: $nav-icon-width;
+
+      li {
+         float:right;
+         padding-top: 18px;
+
+      }
+
+
+
+
+   }
+   .navbut {
+      list-style-type: none;
+      width: 50%;
+      font-size: 10px;
+
+      li {
+         display: inline-block;
+         color: lightgray;
+         width:15%;
+         text-align: center;
+
+      }
+
+
+
+   }
+   .navbrand {
+      max-width: $nav-icon-width;
+      padding: 5px;
+      padding-top: none;
+
+      & ~ * {
+         padding-top: 18px;
+      }
+   }
+}
+
+.navbarbox {
+   display: none;
+   background: #000;
+
+   @media screen and (min-width: $tablet-screen) {
+      display:block;
    }
 }
