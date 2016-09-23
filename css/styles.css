@@ -105,7 +105,7 @@ body {
       height: 40px; } }
 
 .botbutbox {
-  background: url("/Users/victorcarpenter/TIY/Assignments/assignment-07/images/assets/solrod-drawingboard-background.jpg");
+  background: url("../images/assets/solrod-drawingboard-background.jpg");
   background-size: cover; }
   .botbutbox .botbut {
     width: 90%;
